@@ -1,7 +1,7 @@
 .DS_Store
 node_modules
 /dist
-vue3three
+pages-VUE
 
 # local env files
 .env.local
