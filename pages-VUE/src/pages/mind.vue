@@ -56,21 +56,23 @@
     <div class="highlight"><pre class="editor editor-colors"><div class="line"><span class="text"><span>npm&nbsp;install&nbsp;vue-mind-mapping&nbsp;-S</span></span></div></pre></div>
     <p>## 使用</p>
     <div class="highlight js"><pre class="editor editor-colors"><div class="line"><span class="source js"><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>&nbsp;ES6</span></span></span></div><div class="line"><span class="source js"><span class="meta import js"><span class="keyword control js"><span>import</span></span><span>&nbsp;</span><span class="variable other module js"><span>vuemindmapping</span></span><span>&nbsp;</span><span class="keyword control js"><span>from</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>vue-mind-mapping</span><span class="punctuation definition string end js"><span>'</span></span></span></span></span></div><div class="line"><span class="source js"><span>&nbsp;</span></span></div><div class="line"><span class="source js"><span class="variable other object js"><span>Vue</span></span><span class="meta js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>use</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span>vuemindmapping</span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div><div class="line"><span class="source js"><span>&nbsp;</span></span></div><div class="line"><span class="source js"><span class="keyword operator comparison js"><span>&lt;</span></span><span>MindMapping&nbsp;</span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;v</span><span class="keyword operator js"><span>-</span></span><span>model&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>testData</span><span class="punctuation definition string end js"><span>"</span></span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;</span><span class="keyword operator assignment js"><span>:</span></span><span>width&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>width</span><span class="punctuation definition string end js"><span>'</span></span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;</span><span class="keyword operator assignment js"><span>:</span></span><span>height&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>height</span><span class="punctuation definition string end js"><span>'</span></span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;</span><span class="keyword operator assignment js"><span>:</span></span><span>spacing&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>50</span><span class="punctuation definition string end js"><span>'</span></span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;topColor&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>#646464</span><span class="punctuation definition string end js"><span>'</span></span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;</span><span class="keyword operator assignment js"><span>:</span></span><span>fontSize&nbsp;&nbsp;&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>30</span><span class="punctuation definition string end js"><span>'</span></span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;</span><span class="keyword operator assignment js"><span>:</span></span><span>fontLength&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>10</span><span class="punctuation definition string end js"><span>'</span></span></span></span></div><div class="line"><span class="source js"><span class="keyword operator comparison js"><span>&gt;</span><span>&lt;</span></span><span class="keyword operator js"><span>/</span></span><span>MindMapping</span><span class="keyword operator comparison js"><span>&gt;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;</span></span></div></pre></div>
-    <h3><a id="user-content-width，-height" class="deep-link" href="#width，-height" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>width， height</h3>
+    <h3>width， height</h3>
     <p>初始宽高</p>
-    <h3><a id="user-content-spacing" class="deep-link" href="#spacing" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>spacing</h3>
+    <h3>spacing</h3>
     <p>标题之间的横向间距，纵向间距是标题的高度</p>
-    <h3><a id="user-content-topcolor" class="deep-link" href="#topcolor" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>topColor</h3>
+    <h3>topColor</h3>
     <p>主标题的颜色以及箭头颜色</p>
-    <h3><a id="user-content-fontsize" class="deep-link" href="#fontsize" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>fontSize</h3>
+    <h3>fontSize</h3>
     <p>标题文字大小，下一级标题文字大小是上一级的0.8最小是14</p>
-    <h3><a id="user-content-fontlength" class="deep-link" href="#fontlength" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>fontLength</h3>
+    <h3>fontLength</h3>
     <p>每个标题显示的字数显示不玩的会用...代替</p>
-    <h2><a id="user-content-v-model" class="deep-link" href="#v-model" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>v-model</h2>
+     <h3>onlyColor</h3>
+    <p>设置图标颜色为单一颜色</p>
+    <h2>v-model</h2>
     <p>会返回一个json字符串，代表生成的导图数据格式，
     要是想要加载生成的导图，需要一开始传入导图的json字符串</p>
     <div class="highlight js"><pre class="editor editor-colors"><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span class="invalid illegal string js"><span>{</span></span></span></span></div><div class="line"><span class="source js"><span class="string quoted single js"><span class="invalid illegal string js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"x":5,</span></span></span></span></div><div class="line"><span class="source js"><span class="string quoted single js"><span class="invalid illegal string js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"y":400,</span></span></span></span></div><div class="line"><span class="source js"><span class="string quoted single js"><span class="invalid illegal string js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"title":"主标题",</span></span></span></span></div><div class="line"><span class="source js"><span class="string quoted single js"><span class="invalid illegal string js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"index":0,</span></span></span></span></div><div class="line"><span class="source js"><span class="string quoted single js"><span class="invalid illegal string js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"color":"#646464",</span></span></span></span></div><div class="line"><span class="source js"><span class="string quoted single js"><span class="invalid illegal string js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"size":30,</span></span></span></span></div><div class="line"><span class="source js"><span class="string quoted single js"><span class="invalid illegal string js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"sprites":[</span></span></span></span></div><div class="line"><span class="source js"><span class="string quoted single js"><span class="invalid illegal string js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</span></span></span></span></div><div class="line"><span class="source js"><span class="string quoted single js"><span class="invalid illegal string js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"x":185,</span></span></span></span></div><div class="line"><span class="source js"><span class="string quoted single js"><span class="invalid illegal string js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"y":-171.0703125,</span></span></span></span></div><div class="line"><span class="source js"><span class="string quoted single js"><span class="invalid illegal string js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"title":"随机分配颜色",</span></span></span></span></div><div class="line"><span class="source js"><span class="string quoted single js"><span class="invalid illegal string js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"index":1,</span></span></span></span></div><div class="line"><span class="source js"><span class="string quoted single js"><span class="invalid illegal string js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"color":"#e78ed9",</span></span></span></span></div><div class="line"><span class="source js"><span class="string quoted single js"><span class="invalid illegal string js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"size":24,</span></span></span></span></div><div class="line"><span class="source js"><span class="string quoted single js"><span class="invalid illegal string js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"sprites":[&nbsp;]</span></span></span></span></div><div class="line"><span class="source js"><span class="string quoted single js"><span class="invalid illegal string js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></span></span></span></div><div class="line"><span class="source js"><span class="string quoted single js"><span class="invalid illegal string js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</span></span></span></span></div><div class="line"><span class="source js"><span class="string quoted single js"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div></pre></div>
-    <h3><a id="user-content-props" class="deep-link" href="#props" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Props</h3>
+    <h3>Props</h3>
     <table>
     <thead>
     <tr>
@@ -82,46 +84,52 @@
     </thead>
     <tbody>
     <tr>
-    <td>value</td>
-    <td style="text-align:center;">String</td>
-    <td style="text-align:center;"></td>
-    <td>必传</td>
+      <td>value</td>
+      <td style="text-align:center;">String</td>
+      <td style="text-align:center;"></td>
+      <td>必传</td>
     </tr>
     <tr>
-    <td>width</td>
-    <td style="text-align:center;">Number</td>
-    <td style="text-align:center;">500</td>
-    <td>选择参数，也可以不传</td>
+      <td>width</td>
+      <td style="text-align:center;">Number</td>
+      <td style="text-align:center;">500</td>
+      <td>选择参数，也可以不传</td>
     </tr>
     <tr>
-    <td>height</td>
-    <td style="text-align:center;">Number</td>
-    <td style="text-align:center;">500</td>
-    <td>选择参数，也可以不传</td>
+      <td>height</td>
+      <td style="text-align:center;">Number</td>
+      <td style="text-align:center;">500</td>
+      <td>选择参数，也可以不传</td>
     </tr>
     <tr>
-    <td>spacing</td>
-    <td style="text-align:center;">Number</td>
-    <td style="text-align:center;">50</td>
-    <td>选择参数，也可以不传</td>
+      <td>spacing</td>
+      <td style="text-align:center;">Number</td>
+      <td style="text-align:center;">50</td>
+      <td>选择参数，也可以不传</td>
     </tr>
     <tr>
-    <td>topColor</td>
-    <td style="text-align:center;">String</td>
-    <td style="text-align:center;">#ff2970</td>
-    <td>选择参数，也可以不传</td>
+      <td>topColor</td>
+      <td style="text-align:center;">String</td>
+      <td style="text-align:center;">#ff2970</td>
+      <td>选择参数，也可以不传</td>
     </tr>
     <tr>
-    <td>fontSize</td>
-    <td style="text-align:center;">Number</td>
-    <td style="text-align:center;">40</td>
-    <td>选择参数，也可以不传</td>
+      <td>fontSize</td>
+      <td style="text-align:center;">Number</td>
+      <td style="text-align:center;">40</td>
+      <td>选择参数，也可以不传</td>
     </tr>
     <tr>
-    <td>fontLength</td>
-    <td style="text-align:center;">Number</td>
-    <td style="text-align:center;">7</td>
-    <td>选择参数，也可以不传</td>
+      <td>fontLength</td>
+      <td style="text-align:center;">Number</td>
+      <td style="text-align:center;">7</td>
+      <td>选择参数，也可以不传</td>
+    </tr>
+    <tr>
+      <td>onlyColor</td>
+      <td style="text-align:center;">Boolean</td>
+      <td style="text-align:center;">false</td>
+      <td>选择参数，也可以不传</td>
     </tr>
     </tbody>
     </table>
