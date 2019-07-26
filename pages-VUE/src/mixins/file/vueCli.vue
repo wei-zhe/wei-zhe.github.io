@@ -12,7 +12,7 @@ export default {
 </p>
 <p>当前的项目目录是这样的：
 </p>
-<pre style="background: #282c34;color: #929292;"><code >    
+<pre style="background: #282c34;color: #ff9401;"><code >    
 
     public
     src
@@ -27,7 +27,7 @@ export default {
 </p>
 <p>然后将 src 目录改为 <code>examples</code> 用作示例
 </p>
-<pre style="background: #282c34;color: #929292;"><code >    
+<pre style="background: #282c34;color: #ff9401;"><code >    
     
     examples
     packages
@@ -48,7 +48,7 @@ export default {
 <p>在根目录下创建一个 <code>vue.config.js</code> 文件
 
 </p>
-<pre style="background: #282c34;color: #929292;"><code >
+<pre style="background: #282c34;color: #ff9401;"><code >
     
     // vue.config.js
 
@@ -86,7 +86,7 @@ export default {
 </p>
 <p>这里以 textarea 组件为例，完整的 packages 目录结构如下：
 </p>
-<pre style="background: #282c34;color: #929292;"><code >    
+<pre style="background: #282c34;color: #ff9401;"><code >    
     
     packages
     textarea
@@ -104,7 +104,7 @@ export default {
 </p>
 <p><code>textarea/index.js </code> 用于导出单个组件，如果要做按需引入，也需要在这里配置
 </p>
-<pre style="background: #282c34;color: #929292;"><code >
+<pre style="background: #282c34;color: #ff9401;"><code >
     
     // packages/textarea/index.js
 
@@ -122,7 +122,7 @@ export default {
 <h2>四、整合并导出组件</h2>
 <p>编辑 <code>packages/index.js</code> 文件，实现组件的全局注册
 </p>
-<pre style="background: #282c34;color: #929292;"><code >
+<pre style="background: #282c34;color: #ff9401;"><code >
 
     // packages / index.js
 
@@ -161,7 +161,7 @@ export default {
 </p>
 <p>可以在 examples/main.js 中引入该组件
 </p>
-<pre style="background: #282c34;color: #929292;"><code >
+<pre style="background: #282c34;color: #ff9401;"><code >
 
     import TagTextarea from '../packages/index'
     Vue.use(TagTextarea)
@@ -186,7 +186,7 @@ export default {
 </ol>
 <p>基于此，在 <code>package.json</code> 里的 <code>scripts</code> 添加一个 <code>lib</code> 命令
 </p>
-<pre style="background: #282c34;color: #929292;"><code >
+<pre style="background: #282c34;color: #ff9401;"><code >
     
     // pageage.json
 
@@ -203,7 +203,7 @@ export default {
 <p>最重要的是我们需要先修改package.json文件
 
 </p>
-<pre style="background: #282c34;color: #929292;"><code > 
+<pre style="background: #282c34;color: #ff9401;"><code > 
     
     // 这里注意 每次上到npm上需要更改版本号，不然也会错误
     "private" :false, 
@@ -237,7 +237,7 @@ export default {
 </p>
 <p>该文件的语法和 <code>.gitignore</code> 的语法一样，设置发布到 npm 时忽略哪些目录或文件
 </p>
-<pre style="background: #282c34;color: #929292;"><code >    
+<pre style="background: #282c34;color: #ff9401;"><code >    
     
     .DS_Store
     node_modules/
@@ -269,7 +269,7 @@ export default {
 
 </code></pre>
 <h2>添加用户npm</h2>
-<pre style="background: #282c34;color: #929292;" style="background: #282c34;#929292"><code >    
+<pre style="background: #282c34;color: #ff9401;" style="background: #282c34;#ff9401"><code >    
     
     npm adduser 
     Username: your name
