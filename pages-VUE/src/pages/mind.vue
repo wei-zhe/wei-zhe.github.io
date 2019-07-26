@@ -5,7 +5,11 @@
         width: windowSize.width > 700 ? (windowSize.width*0.8 + 'px') : (windowSize.width*0.95 + 'px'),
       }"
     >
-        
+        <ReturnIcon
+          v-model   = "dataArray"
+          :dataArray='[]'
+          :search="false"
+        />
         <div 
           class="mind_box"
           v-if="windowSize.width*0.8 > 1000"

@@ -54,6 +54,13 @@ export default {
                     router       : '/file?type=regular',
                     Introduction : 'var patt1 = new RegExp(/^[A-Z]+$/)',
                 },
+                vueCli   : {
+                    img          : '',
+                    type         : 'text',
+                    title        : 'vue-cli插件开发',
+                    router       : '/file?type=vueCli',
+                    Introduction : 'vue-cli 3.x 开发插件并发布到 npm',
+                },
             },
         };
     },

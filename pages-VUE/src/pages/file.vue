@@ -8,11 +8,18 @@
         <ReturnIcon
           v-model   = "dataArray"
           :dataArray='fileData'
+          :search="searchJudge"
         />
 
         <div class="text_body">
+          <div
+            v-if="!textList"
+            v-html="dataArray.data"
+            class="markdown"
+          ></div>
 
           <div 
+            v-if="textList"
             class="text_list"
             v-for="item in dataArray"
           >
@@ -62,23 +69,35 @@
 </template>
 
 <script>
-import Pages from '../mixins/pages.vue'
-import JsFs from '../mixins/jsFs.vue'
-import Regular from '../mixins/regular.vue'
+import Pages   from '../mixins/pages.vue'
+import JsFs    from '../mixins/file/jsFs.vue'
+import Regular from '../mixins/file/regular.vue'
+import VueCli  from '../mixins/file/vueCli.vue'
 
 export default {
   name: 'file',
-  mixins: [Pages, JsFs, Regular],
+  mixins: [Pages, JsFs, Regular, VueCli],
   data (){
     return {
       type     : 'jsFs',
       fileData : [],
+      searchJudge : true,
+      textList    : true,
     }
   },
   mounted: function () {
 
     this.type = this.$route.query.type || 'jsFs';
-    this.dataArray = this.fileData = this[this.type] || this.jsFs
+    this.dataArray = this.fileData = this[this.type] || this.jsFs;
+    switch(this.type){
+      case 'vueCli':
+        this.searchJudge = false;
+        this.textList = false;
+        break;
+      default:
+        this.searchJudge = true;
+        this.textList = true;
+    }
 
   },
 }
@@ -92,7 +111,7 @@ export default {
   position: relative;
   background: #fff;
   border-radius: 6px 6px 3px 3px;
-  padding: 5%;
+  padding: 20px 2%;
 
   .text_body{
     text-align: left;
@@ -124,6 +143,11 @@ export default {
         padding: 15px;
         color: red;
         background: rgb(248, 248, 248);
+      }
+    }
+    .markdown{
+      .lang-javascript{
+        
       }
     }
   }

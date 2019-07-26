@@ -83,6 +83,7 @@ export default {
     transition: all 0.3s;
     padding: 5px 0;
     box-shadow: #d8dee9 0px 0px 5px 0px;
+    margin-bottom: 5px;
 
     &:hover{
       background: rgba(66, 185, 131, 0.8);
